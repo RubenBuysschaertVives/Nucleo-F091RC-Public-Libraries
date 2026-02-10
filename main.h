@@ -4,7 +4,7 @@
 #if !defined(MAIN_DEFINED)
 	#define MAIN_DEFINED
 	
-	// Functie prototypes.
+	// Functieprototypes.
 	void SystemClock_Config(void);
 	void WaitForMs(uint32_t timespan);
 #endif
