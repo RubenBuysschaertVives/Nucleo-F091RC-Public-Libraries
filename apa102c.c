@@ -43,8 +43,6 @@ void ClearAPA102CLeds(APA102C leds[])
 
 void SetAPA102CLed(APA102C leds[], uint8_t ledNumber, uint8_t red, uint8_t green, uint8_t blue)
 {
-	ClearAPA102CLeds(leds);
-	
 	if(ledNumber < NUMBER_OF_APA102C_LEDS)
 	{
 		leds[ledNumber].brightness = DEFAULT_LED_BRIGHTNESS;
