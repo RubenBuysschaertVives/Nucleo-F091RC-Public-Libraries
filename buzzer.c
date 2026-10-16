@@ -1,5 +1,6 @@
 #include "stm32f091xc.h"
 #include "stdbool.h"
+#include "main.h"
 
 // Functie om de zoemer-pin op uitgang te zetten.
 void InitBuzzer(void)
@@ -12,9 +13,9 @@ void InitBuzzer(void)
 }
 
 // De zoemer aansturen.
-void Buzzer(bool offOn)
+void Buzzer(enum offOn offOn)
 {
-	if(offOn)
+	if(offOn == on)
 		GPIOA->BSRR |= GPIO_BSRR_BS_9;
 	else
 		GPIOA->BSRR |= GPIO_BSRR_BR_9;
