@@ -8,7 +8,6 @@
 	
 	// Function prototypes
 	void ConnectToWiFiNetwork(char ssid[], char pwd[]);
-//	bool IsConnectedToWiFiNetwork(char ssid[]);
 	void HttpRequest(char host[], char path[], uint16_t port, enum HttpVerb method, char data[]);
 	void HttpsRequest(char host[], char path[], uint16_t port, enum HttpVerb method, char data[]);
 	bool ConnectToMqttBroker(char brokerAddress[], uint16_t port, char user[], char pwd[], char mqttClientId[]);
